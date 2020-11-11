@@ -115,10 +115,7 @@ function Baby(name, age, favoriteToy) {
   this.favoriteToy = favoriteToy;
 }
 
-Object.getOwnPropertyNames(Baby.prototype)
 Baby.prototype = Object.create(Person.prototype);
-Baby.prototype.constructor = Baby;
-
 
 Baby.prototype.play = function(){
   return `Playing with ${this.favoriteToy}`
