@@ -126,10 +126,10 @@ Baby.prototype.play = function(){
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. the global binding will be when you are using this is a funcion that it's been declared in the global scope, in this case if we console log or return 'this' that will point to the Window object
+  2. the new binding will be when have create a function to create object base on that prototype, every time that we create an object and save it onto a variable, if we call thatVariable.method() if our method is using 'this' that will point to our new instance of that object
+  3. the implicid method i thing that its verry similar to use in a new binding, we know that if we call a .method() whatever object that on the left of the point will be the context of our 'this'
+  4. explicid binding, it's the ability that we have to use .call or .apply and specify the object where we wanna point our 'this'
 */
 
 
